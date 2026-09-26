@@ -1,0 +1,12 @@
+{
+  "name": "datastraw-crm",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "backend": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd backend; .\\.venv\\Scripts\\uvicorn app.main:app --reload\"",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "test:backend": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd backend; .\\.venv\\Scripts\\pytest -v\""
+  }
+}
